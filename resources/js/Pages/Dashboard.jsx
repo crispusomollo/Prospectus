@@ -1,7 +1,7 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
 import React from 'react';
-import { LineChart, Wallet, Briefcase, BriefcaseCheck, History, Activity, Database, Laptop, Code, Landmark } from 'lucide-react';
+import { LineChart, Wallet, Briefcase, BriefcaseBusiness, History, Activity, Database, Laptop, Code, Landmark } from 'lucide-react';
 
 export default function Dashboard({ financials, dealsValue, projectsStatus, recentFollowUps, catalogBreakdown }) {
     
@@ -68,7 +68,8 @@ export default function Dashboard({ financials, dealsValue, projectsStatus, rece
                                 </div>
                             </div>
                             <div className="bg-slate-50 border rounded-xl p-4 flex items-center gap-3">
-                                <div className="bg-amber-100 text-amber-700 p-2.5 rounded-lg"><BriefcaseCheck size={18}/></div>
+                                <div className="bg-amber-100 text-amber-700 p-2.5 rounded-lg"><BriefcaseBusiness size={18}/></div>
+
                                 <div>
                                     <p className="font-bold text-slate-800 text-sm">{consultancyStats.total} Consultancy Tiers</p>
                                     <p className="text-[10px] text-slate-400 font-medium">Standard Hours Rate Matrix Active</p>
